@@ -266,7 +266,7 @@ struct Monster { // note: missing field _mAFNum
 	 */
 	uint8_t intelligence;
 	/** Stores information for how many ticks the monster will remain active */
-	uint8_t activeForTicks;
+	uint8_t activeForTicks; // 丢失视野之后还能tick次数
 	UniqueMonsterType uniqueType;
 	uint8_t uniqTrans;
 	int8_t corpseId;

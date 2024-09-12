@@ -4048,6 +4048,7 @@ void ProcessMonsters()
 			monster.hitPoints = std::min(monster.hitPoints, monster.maxHitPoints); // prevent going over max HP with part of a single regen tick
 		}
 
+		// 刚进入视野时候更新
 		if (IsTileVisible(monster.position.tile) && monster.activeForTicks == 0) {
 			if (monster.type().type == MT_CLEAVER) {
 				PlaySFX(SfxID::ButcherGreeting);
